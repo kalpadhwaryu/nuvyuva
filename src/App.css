@@ -49,7 +49,7 @@
   min-height: 100vh;
 }
 
-.timer{
+.timer {
   display: block;
   position: relative;
   flex: column;
@@ -69,6 +69,7 @@
 }
 .clock section p {
   font-size: 2rem;
+  margin-bottom: -30px;
 }
 .clock section small {
   color: silver;
@@ -77,29 +78,25 @@
 
 .clock {
   position: relative;
-  margin: a;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 500px;
 }
 
-.timer div:first-child{
-  
+.timer div:first-child {
 }
 
-.logo{
- 
+.logo {
 }
 
-.timer div:last-child{
+.timer div:last-child {
   display: grid;
-  grid-template-columns: repeat(7,1fr);
-
+  grid-template-columns: repeat(7, 1fr);
   margin-top: 3em;
 }
 
-section p:first-child, .timer div:last-child span{
+section p:first-child,
+.timer div:last-child span {
   font-size: 3em;
 }
 @media only screen and (min-width: 1250px) {
@@ -108,11 +105,24 @@ section p:first-child, .timer div:last-child span{
   }
 }
 
-@media screen and (max-width: 480px){
-  .timer div:last-child{
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
     margin-left: 2em;
     margin-right: 2em;
     padding: 3em 1em;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 200px;
+    height: 155px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 100px;
+    height: 78px;
   }
 }
